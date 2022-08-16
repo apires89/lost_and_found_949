@@ -1,0 +1,15 @@
+<div class="form-control">
+<%= form_for(item) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :description %>
+<%= f.text_field :description %>
+<%= f.label :address %>
+<%= f.text_field :address %>
+<%= f.label :category %>
+<%= f.text_field :category %>
+<%= f.label :date_found %>
+<%= f.date_field :date_found %>
+<%= f.submit %>
+<% end %>
+</div>

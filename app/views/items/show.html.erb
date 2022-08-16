@@ -1,0 +1,11 @@
+<h2>More info on <%= @item.name %></h2>
+<p><%= @item.description %></p>
+<p><%= @item.category %></p>
+<p><%= @item.address %></p>
+<p><%= @item.date_found %></p>
+<%= link_to "Edit", edit_item_path(@item) %>
+<%= link_to "Back", root_path %>
+
+<%= link_to item_path(@item), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  do %>
+  <i class="fa-solid fa-trash"></i>
+<% end %>
